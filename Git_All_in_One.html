@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/Git_All_in_One.css">
+    <title>Git and Github</title>
+</head>
+
+<body>
+
+    <div id="main-title-1">
+        <h1 style="text-align:center;">Git</h1>
+    </div>
+    <hr>
+    <div id="table-of-contents-1">
+        <h2></h2>
+
+    </div>
+    <hr>
+    <div id="introduction-1">
+        <pre>
+            - A version control system.
+            - git-scm.com
+            - free and local tool(downloadable).
+            - can only be accessed from a registered user on a special computer.
+            - this is where github comes into play.
+
+            - github.com
+            - A development platform.
+            - Hosted on the cloud (not local).
+            - free for basic user.
+            - collaborate with other programmers
+            - Github is a git repository hosting provider.
+            
+
+            - git and github are 2 different tools.
+            - they are 2 different services.
+            - they perfectly work together.
+
+
+            - git has a command line interface.
+            
+
+            - Consider our website files are in a folder named 'shop'
+            - Simply this folder contains index.html, styles.css and images folder.
+            - git calls the main folder of our project, 'Working Directory'
+
+            - git calls every snapshot of the project a 'commit'
+
+            - A commit is a snapshot of all the files and folders of the project at a certain time.
+
+            - First commit = first snapshot
+            
+            - (VIP) git does not stores different files.
+                 if you change the first file it just stores the changes not the files.
+            - git calls the the first files plus the changes, commit number 2.
+
+            - Storing files would not be efficient.
+
+            - git is all about tracking changes not about storing files.
+
+            - All The commits or all the saving logic of the commits are stored in the main branch or master branch.
+
+            - Master branch stores all the changes made throughout the project.
+
+            - When we convert a project folder to a git working directory 
+
+            - 
+        </pre>
+    </div>
+    <hr>
+    <div id="installation-1">
+        <h2>Git Installation</h2>
+        <pre>
+            <h3>Windows Installation</h3>
+            download and install it from here! <a href="http://git-scm.com">git-scm.com</a>    
+            Use git shell : open git bash and write commands. 
+
+
+            <h3>Linux Installation</h3>
+            Terminal: >> sudo apt-get install git-all 
+                      >> git --version
+
+        </pre>
+    </div>
+    <hr>
+    <div id="git-level-one-1">
+        <h2>Git Start (Level One)</h2>
+        <pre>
+            - First of all we need to set a username and email to use git
+             because several people can work on a project.
+
+             - Setting username:
+             >> git config --global user.name "your_username"
+
+
+             - Setting email:
+             >> git config --global user.email "your_email"
+             - use the email that you have registered on git-hub with.
+             
+
+             - Setting the default editor for git 
+             >> git config --global core.editor editor_name
+             we can use code or nano editor
+
+             - Go to github.com and make a repository and download it.
+                copy the https link.
+
+             - In this tutorial we use a test repository of Kaarash Academy.
+             - [https://github.com/Kaarash/git-Tutorial-Test--Kaarash.Academy.git]
+             - You should make your own repository and use it.
+
+             - to save the repository open your terminal and navigate to the folder of your projects.
+
+             >> git clone copied_URL
+
+             - To see if the repository has changed or not go into the repository using cd and :
+             >> git status
+
+
+             - md is abbreviation for mark down
+               github repos usually have a file named README.md to introduce the repository.
+
+             - Change this file a little bit and then type
+              >> git status again.
+
+             - To send the modifications to git local repo...
+             >> git add README.md
+
+             - this add command sends the changes to the staging section of git
+             this means the changes are not still added(committed) to the local repo
+
+             - To commit the changes to the local repository:
+             >> git commit -m "your_message"
+             any commit needs a message like: "this is the first edition"
+
+
+             - Now that the changes have been committed to the file we should send the file to the main repo on github.
+             >> git push  
+             then enter your username and password.
+             Done!
+             <hr>
+
+
+
+             - Now, what if we want to change more than 1 file or make some folders?
+
+             - go inside the local repo and make folder1 with 2 files inside it. file1.txt and file2.txt
+
+             >> git status
+                shows only one folder because the changed files are only in folder 1.
+
+             >> git add folder_name
+             >> git status
+             >> git commit -m "1 folder with 2 files were added to the repo"
+             >> git push
+
+             - Now edit file1.txt and file2.txt  delete sth and add sth to them.
+             >> git status
+
+             now more than 1 file has been modified and we do not want to type the name of all the files!
+             >> git add .
+             >> git status
+             above command adds the changes of all the files inside the local repo to the staging section
+
+            
+            >> git push
+
+        </pre>
+    </div>
+    <hr>
+    <div id="git-level-two-1">
+        <h2>Git Level Two</h2>
+        <pre>
+
+        </pre>
+    </div>
+
+</body>
+
+</html>
